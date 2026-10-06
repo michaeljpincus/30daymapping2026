@@ -1,0 +1,102 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 66.667%;
+}
+
+#story {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 33.333%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.15);
+  font-family: 'Roboto Condensed', sans-serif;
+  z-index: 1;
+}
+
+#story-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 32px 30px;
+}
+
+
+#title {
+  font-size: 30px;
+}
+
+#body {
+  font-size: 20px;
+  text-align: justify;
+  hyphens: auto;
+  line-height: 1.5
+}
+
+#story-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 28px;
+  border-top: 1px solid #e5e5e5;
+}
+
+#story-nav button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  background: #1b56b5;
+  color: #fff;
+  cursor: pointer;
+}
+
+#story-nav button:disabled {
+  background: #ccc;
+  cursor: default;
+}
+
+#story.is-intro #title {
+  font-size: 2.4rem;
+  line-height: 1.1;
+}
+
+#story.is-intro #prev {
+  visibility: hidden; /* hides Back without shifting the layout */
+}
+
+#hero {
+  margin: 0 0 16px;
+}
+
+#hero img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+#hero figcaption {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+
+@media (max-width: 800px) {
+  #map { width: 100%; height: 60%; bottom: auto; }
+  #story { top: 60%; width: 100%; box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.15); }
+}

@@ -1,0 +1,72 @@
+university,university_clean,student_count,latitude,longitude,status
+University of Pennsylvania,University of Pennsylvania,10,39.9522,-75.1932,success
+Temple University,Temple University,5,39.9812,-75.1562,success
+University College London,University College London,4,51.5246,-0.134,success
+Tianjin University,Tianjin University,2,39.107,117.1761,success
+University of Virginia,University of Virginia,2,38.0336,-78.508,success
+Sun Yat-sen University,Sun Yat-sen University,2,23.0956,113.2978,success
+University of Utah,University of Utah,2,40.7649,-111.8421,success
+Ohio State University: Columbus Campus,Ohio State University: Columbus Campus,2,40.0067,-83.0305,success
+University of Southern California,University of Southern California,2,34.0224,-118.2851,success
+University of Texas at Arlington,University of Texas at Arlington,1,32.7311,-97.1141,success
+Dalian University of Technology,Dalian University of Technology,1,38.8795,121.5226,success
+Virginia Polytechnic Institute and State University,Virginia Polytechnic Institute and State University,1,37.2284,-80.4234,success
+Boston University,Boston University,1,42.3505,-71.1054,success
+University Of Edinburgh,University Of Edinburgh,1,55.9445,-3.1892,success
+Nanjing Normal University,Nanjing Normal University,1,32.105,118.9204,success
+Jiangnan University,Jiangnan University,1,31.5667,120.3167,success
+University of Liverpool,University of Liverpool,1,53.4064,-2.9665,success
+China University of Petroleum (East China),China University of Petroleum (East China),1,36.2619,120.3991,success
+Shenzhen University,Shenzhen University,2,22.5346,114.0594,success
+Southeast University,Southeast University,1,32.0572,118.7995,success
+University of Nottingham Ningbo China,University of Nottingham Ningbo China,1,29.8167,121.55,success
+Tsinghua University,Tsinghua University,1,40.0005,116.3269,success
+Zhuhai College of Jilin University,Zhuhai College of Jilin University,1,22.3574,113.5447,success
+EUROPEAN BUSINESS SCHOOL,EUROPEAN BUSINESS SCHOOL,1,50.0446,8.2419,success
+GEORGE WASHINGTON UNIVERSITY,GEORGE WASHINGTON UNIVERSITY,1,38.8997,-77.0486,success
+Xi’an University of Architecture and Technology,Xi’an University of Architecture and Technology,1,34.2467,108.9768,success
+University Of Sheffield,University Of Sheffield,1,53.3811,-1.4886,success
+University of Colorado Boulder,University of Colorado Boulder,1,40.0076,-105.2659,success
+University of Richmond,University of Richmond,1,37.5781,-77.5395,success
+Indiana University Bloomington,Indiana University Bloomington,1,39.171,-86.5235,success
+UNIV NEBRASKA LINCOLN*,UNIV NEBRASKA LINCOLN*,1,40.8202,-96.7005,success
+CUNY HUNTER COLLEGE,CUNY HUNTER COLLEGE,1,40.7687,-73.9647,success
+UNIV WISC MADISON*,University of Wisconsin-Madison,2,43.0766,-89.4125,success
+Columbia University,Columbia University,1,40.8075,-73.9626,success
+LOUISIANA TECH UNIVERSITY,LOUISIANA TECH UNIVERSITY,1,32.5128,-92.6379,success
+UNIV CALIF BERKELEY,UNIV CALIF BERKELEY,1,37.8719,-122.2585,success
+ZHEJIANG UNIVERSITY,ZHEJIANG UNIVERSITY,1,30.2636,120.1217,success
+UNIVERSITY OF ARIZONA,UNIVERSITY OF ARIZONA,1,32.2319,-110.9501,success
+HUNAN UNIVERSITY,HUNAN UNIVERSITY,1,28.1723,112.9423,success
+Oberlin College,Oberlin College,1,41.2942,-82.217,success
+Villanova University,Villanova University,1,40.038,-75.3438,success
+POLYTECHNIC INSTITUTE OF NYU,POLYTECHNIC INSTITUTE OF NYU,1,40.6943,-73.9865,success
+BANDUNG INST OF TECHNOLOGY,BANDUNG INST OF TECHNOLOGY,1,-6.8911,107.6103,success
+STONY BROOK UNIVERSITY SUNY,STONY BROOK UNIVERSITY SUNY,1,40.9143,-73.1245,success
+Ritsumeikan University,Ritsumeikan University,1,34.9653,135.7262,success
+UNIV FLORIDA,UNIV FLORIDA,2,29.6436,-82.3549,success
+"Birla Institute of Technology Mesra, Ranchi","Birla Institute of Technology Mesra, Ranchi",1,23.4182,85.4402,success
+University of California: Santa Barbara,University of California: Santa Barbara,1,34.414,-119.8489,success
+University of Illinois at Urbana-Champaign,University of Illinois at Urbana-Champaign,1,40.102,-88.2272,success
+University of Cambridge,University of Cambridge,1,52.2043,0.1218,success
+Haverford College,Haverford College,1,40.0148,-75.3029,success
+Nanyang Technological University,Nanyang Technological University,1,1.3483,103.6831,success
+Xi'an Jiaotong-Liverpool University,Xi'an Jiaotong-Liverpool University,1,31.2858,120.7345,success
+University of Chicago,University of Chicago,1,41.7886,-87.5987,success
+California State Polytechnic University: Pomona,California State Polytechnic University: Pomona,1,34.0563,-117.8214,success
+Syracuse University,Syracuse University,1,43.0481,-76.1474,success
+Winston-Salem State University,Winston-Salem State University,1,36.1072,-80.2951,success
+Tufts University,Tufts University,1,42.4085,-71.1183,success
+Seoul National University,Seoul National University,1,37.4601,126.952,success
+Arizona State University,Arizona State University,1,33.424564,-111.928001,success
+Wuhan University,Wuhan University,1,30.537833,114.358333,success
+Beijing Forestry University,Beijing Forestry University,1,40.004056,116.3425,success
+Beijig Jiaotong University,Beijing Jiaotong University,1,39.959,116.348,success
+Bryn Mawr College,Bryn Mawr College,1,40.02639,-75.31361,success
+Huazhong University of Science and Technology,Huazhong University of Science and Technology,1,30.528611,114.358611,success
+McGill University,McGill University,1,45.504444,-73.577222,success
+Hongik University,Hongik University,1,37.55038,126.92577,success
+University of Cincinnati,University of Cincinnati,1,39.133333,-84.519444,success
+University of Texas at Austin,University of Texas at Austin,1,30.284918,-97.734056,success
+University of Warwick,University of Warwick,1,52.380081,-1.561931,success
+Cornell University,Cornell University,1,42.453449,-76.473503,success

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MapLibre Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@^6.12.0/dist/maplibre-gl.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="story">
+    <div id="story-content">
+        <figure id="hero" hidden>
+            <img id="hero-img" alt="">
+            <figcaption id="hero-caption"></figcaption>
+        </figure>
+        <h2 id="title"></h2>
+        <p id="body"></p>
+    </div>
+    <div id="story-nav">
+        <button id="prev">Back</button>
+        <span id="counter"></span>
+        <button id="next">Next</button>
+    </div>
+</div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

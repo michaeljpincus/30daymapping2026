@@ -1,0 +1,73 @@
+library(sf)
+library(dplyr)
+library(ggplot2)
+library(patchwork)
+
+# ---- 1. Inputs ---------------------------------------------------------------
+
+states <- st_read('states.geojson')
+amtrak <- st_read('amtrak.geojson')
+
+# amtrak:  sf lines, one row per line/route
+# Adjust these to match your column names:
+state_col <- 'name'    # state name column in `states`
+line_col  <- 'name'       # route/line name column in `amtrak`
+
+
+# ---- 2. Prep geometries -------------------------------------------------------
+# Use an equal-area CRS so every state is drawn consistently
+crs_use <- 5070  # NAD83 / Conus Albers
+
+states <- states |>
+  st_make_valid() |>
+  st_transform(crs_use) |>
+  rename(state = all_of(state_col)) |>
+  select(state, geometry)
+
+amtrak <- amtrak |>
+  st_make_valid() |>
+  st_transform(crs_use) |>
+  rename(line = all_of(line_col)) |>
+  select(line, geometry)
+
+# ---- 3. Crop lines to each state's boundary ------------------------------------
+# st_intersection returns each line piece with the attributes of the state it falls in
+amtrak_clipped <- suppressWarnings(st_intersection(amtrak, states)) |>
+  st_collection_extract("LINESTRING") |>   # drop stray points from touching boundaries
+  st_cast("MULTILINESTRING")
+
+# ---- 4. Consistent colors per line ---------------------------------------------
+all_lines <- sort(unique(amtrak$line))
+line_pal  <- setNames(
+  grDevices::hcl.colors(length(all_lines), palette = "Dark 3"),
+  all_lines
+)
+
+# ---- 5. One panel per state ----------------------------------------------------
+make_panel <- function(st) {
+  poly  <- filter(states, state == st)
+  lines <- filter(amtrak_clipped, state == st)
+
+  ggplot() +
+    geom_sf(data = poly, fill = "grey95", color = "grey30", linewidth = 0.3) +
+    geom_sf(data = lines, aes(color = line), linewidth = 0.8, show.legend = FALSE) +
+    scale_color_manual(values = line_pal) +
+    labs(title = st) +
+    theme_void(base_size = 11) +
+    theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+}
+
+panels <- lapply(sort(states$state), make_panel)
+
+big_plot <- wrap_plots(panels, ncol = 8) +
+  plot_annotation(
+    title   = "Amtrak Lines by State",
+    caption = "Lines clipped to state boundaries",
+    theme   = theme(plot.title = element_text(size = 26, face = "bold", hjust = 0.5))
+  )
+
+# ---- 6. Save large ------------------------------------------------------------
+ggsave("amtrak_by_state.png", big_plot, width = 24, height = 18, dpi = 200, bg = "white")
+# ggsave("amtrak_by_state.pdf", big_plot, width = 24, height = 18)  # vector alternative
+
+big_plot
